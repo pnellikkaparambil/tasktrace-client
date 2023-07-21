@@ -1,9 +1,7 @@
-import { Button } from "primereact/button";
 export default function Index() {
   return (
     <>
       <div id="sidebar">
-        <Button label="Click" />
         <h1>React Router Contacts</h1>
         <div>
           <form id="search-form" role="search">
