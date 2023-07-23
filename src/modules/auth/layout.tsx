@@ -1,15 +1,29 @@
-import React, { Component } from "react";
+import { useToggle, upperFirst } from "@mantine/hooks";
+import { useForm } from "@mantine/form";
+import {
+  TextInput,
+  PasswordInput,
+  Text,
+  Paper,
+  Group,
+  PaperProps,
+  Button,
+  Divider,
+  Checkbox,
+  Anchor,
+  Stack,
+  Box,
+} from "@mantine/core";
 import { Outlet } from "react-router-dom";
 
-export class AuthLayout extends Component {
-  render() {
-    return (
-      <div>
-        AuthLayout
+const AuthLayout = () => {
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <Box w={400}>
         <Outlet />
-      </div>
-    );
-  }
-}
+      </Box>
+    </div>
+  );
+};
 
 export default AuthLayout;

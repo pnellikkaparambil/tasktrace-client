@@ -1,9 +1,16 @@
-import React, { Component } from "react";
+import { Divider, Paper, Text } from "@mantine/core";
+import LoginForm from "../components/login-form";
 
-export class LoginPage extends Component {
-  render() {
-    return <div>LoginPage</div>;
-  }
-}
+const LoginPage = () => {
+  return (
+    <Paper radius="md" p="xl" withBorder>
+      <Text size="lg" align="center" weight={500}>
+        Welcome to Task Trace
+      </Text>
+      <Divider label="Continue with email" labelPosition="center" my="lg" />
+      <LoginForm />
+    </Paper>
+  );
+};
 
 export default LoginPage;

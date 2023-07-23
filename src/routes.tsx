@@ -7,6 +7,7 @@ import HomePage from "./modules/admin/pages/home.js";
 import SettingsPage from "./modules/admin/pages/settings.js";
 import AuthLayout from "./modules/auth/layout.js";
 import LoginPage from "./modules/auth/pages/login.js";
+import RegisterPage from "./modules/auth/pages/register.js";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "login",
         element: <LoginPage />,
+      },
+      {
+        path: "register",
+        element: <RegisterPage />,
       },
     ],
   },
